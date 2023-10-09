@@ -1,3 +1,3 @@
 class Question < ApplicationRecord
-  has_many :option
+  has_many :options
 end
