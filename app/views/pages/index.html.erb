@@ -1,0 +1,13 @@
+<ol>
+    <% @questions.each do |q| %>
+        <li><%= q.title %></li>
+        
+        <div>
+            <% q.options.each do |o|%>
+                <input type="radio" id="<%= o.option_sentence%>" name="<%= q.title%>" value="<%= o.option_sentence%>" <%= o.answer && "checked" %> >
+                <label for="<%= o.option_sentence%>"> <%= o.option_sentence %> </label>
+                <br />
+            <% end %>
+        </div>
+    <% end %>
+</ol>
