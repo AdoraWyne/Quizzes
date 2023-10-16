@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   end
 
   def about
-    
+  end
+
+  def index
+    @questions = Question.all
   end
 end
